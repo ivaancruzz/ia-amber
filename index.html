@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea tu propio agente de IA | Amber</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+
+<body>
+    <main>
+        <header class="header">
+            <div class="container-x">
+                <a href="https://amber.pe" aria-label="Ir a la página de inicio">
+                    <img src="assets/logo-dark.svg" alt="Logo amber">
+                </a>
+            </div>
+        </header>
+        <section class="hero">
+            <div class="container-x">
+                <h1 class="hero__title" data-aos="zoom-in">
+                    Crea tu propio agente de IA
+                </h1>
+            </div>
+        </section>
+        <section>
+            <div class="container-x col-2">
+                <ul class="event__info">
+                    <li data-aos="fade-right">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15 17C16.1046 17 17 16.1046 17 15C17 13.8954 16.1046 13 15 13C13.8954 13 13 13.8954 13 15C13 16.1046 13.8954 17 15 17Z"
+                                fill="currentColor" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM5 18V7H19V18C19 18.5523 18.5523 19 18 19H6C5.44772 19 5 18.5523 5 18Z"
+                                fill="currentColor" />
+                        </svg>
+                        Martes 6 de mayo, 2025
+                    </li>
+                    <li data-aos="fade-right">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 7H11V12H16V14H9V7Z" fill="currentColor" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z"
+                                fill="currentColor" />
+                        </svg>
+                        8:00 a 12:00 a.m.
+                    </li>
+                    <li data-aos="fade-right">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16.2721 10.2721C16.2721 12.4813 14.4813 14.2721 12.2721 14.2721C10.063 14.2721 8.27214 12.4813 8.27214 10.2721C8.27214 8.06298 10.063 6.27212 12.2721 6.27212C14.4813 6.27212 16.2721 8.06298 16.2721 10.2721ZM14.2721 10.2721C14.2721 11.3767 13.3767 12.2721 12.2721 12.2721C11.1676 12.2721 10.2721 11.3767 10.2721 10.2721C10.2721 9.16755 11.1676 8.27212 12.2721 8.27212C13.3767 8.27212 14.2721 9.16755 14.2721 10.2721Z"
+                                fill="currentColor" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5.79417 16.5183C2.19424 13.0909 2.05438 7.39409 5.48178 3.79417C8.90918 0.194243 14.6059 0.054383 18.2059 3.48178C21.8058 6.90918 21.9457 12.6059 18.5183 16.2059L12.3124 22.7241L5.79417 16.5183ZM17.0698 14.8268L12.243 19.8965L7.17324 15.0698C4.3733 12.404 4.26452 7.97318 6.93028 5.17324C9.59603 2.3733 14.0268 2.26452 16.8268 4.93028C19.6267 7.59603 19.7355 12.0268 17.0698 14.8268Z"
+                                fill="currentColor" />
+                        </svg>
+                        Miraflores, Lima
+                    </li>
+                </ul>
+                <div style="min-height: 500px;" data-aos="fade-right">
+                    <div class="elfsight-app-0d1fee27-cca8-4719-a5e6-b4c77bdcb840" data-elfsight-app-lazy></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-x">
+                <h2 class="title__xl" data-aos="fade-right">Acerca del evento</h2>
+                <p data-aos="fade-right">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae rerum quisquam
+                    officia in, quis, accusamus eos ut magnam fugiat ullam repudiandae itaque inventore tenetur? Ipsum
+                    mollitia est debitis voluptas maiores!</p>
+            </div>
+        </section>
+        <section>
+            <div class="container-x ">
+                <h3 class="title__xl" data-aos="fade-right">Speakers</h3>
+                <div class="col-2">
+                    <div class="card" data-aos="zoom-in">
+                        <div class="card__avatar">
+                            <img src="assets/foto-eliana.webp" alt="Eliana Romero">
+                        </div>
+                        <div class="card__body">
+                            <h4 class="title__normal">Eliana Romero</h4>
+                            <p>Cloud Solutions Architect AWS</p>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="zoom-in">
+                        <div class="card__avatar">
+                            <img src="assets/foto-gabriel.webp" alt="Gabriel Espinoza">
+                        </div>
+                        <div class="card__body">
+                            <h4 class="title__normal">Gabriel Espinoza</h4>
+                            <p>Tech Lead AI at Amber</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-x col-2">
+                <h3 class="title__xl" data-aos="fade-right">Agenda</h3>
+                <div class="roadmap">
+                    <div class="roadmap__item" data-aos="fade-left">
+                        <h4 class="title__normal">Bienvenida y Coffe break</h4>
+                        <p>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 7H11V12H16V14H9V7Z" fill="currentColor" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z"
+                                    fill="currentColor" />
+                            </svg>
+                            8:00 - 8:30 a.m.
+                        </p>
+                    </div>
+                    <div class="roadmap__item" data-aos="fade-left">
+                        <h4 class="title__normal">Sesión teórica: IA Generativa & AWS en empresas modernas</h4>
+                        <p>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 7H11V12H16V14H9V7Z" fill="currentColor" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z"
+                                    fill="currentColor" />
+                            </svg>
+                            8:30 - 9:00 a.m.
+                        </p>
+                    </div>
+                    <div class="roadmap__item" data-aos="fade-left">
+                        <h4 class="title__normal">Q&A</h4>
+                        <p>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 7H11V12H16V14H9V7Z" fill="currentColor" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z"
+                                    fill="currentColor" />
+                            </svg>
+                            9:00 - 9:15 a.m.
+                        </p>
+                    </div>
+                    <div class="roadmap__item" data-aos="fade-left">
+                        <h4 class="title__normal">Coffe break</h4>
+                        <p>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 7H11V12H16V14H9V7Z" fill="currentColor" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z"
+                                    fill="currentColor" />
+                            </svg>
+                            9:15 - 9:30 a.m.
+                        </p>
+                    </div>
+                    <div class="roadmap__item" data-aos="fade-left">
+                        <h4 class="title__normal">Sesión practica: Creación de agente de IA Generativa en AWS</h4>
+                        <p>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 7H11V12H16V14H9V7Z" fill="currentColor" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z"
+                                    fill="currentColor" />
+                            </svg>
+                            9:30 - 11:30 a.m.
+                        </p>
+                    </div>
+                    <div class="roadmap__item" data-aos="fade-left">
+                        <h4 class="title__normal">Networking</h4>
+                        <p>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 7H11V12H16V14H9V7Z" fill="currentColor" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z"
+                                    fill="currentColor" />
+                            </svg>
+                            11:30 - 12:00 a.m.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div data-aos="zoom-in" data-aos-offset="100">
+
+                <button class="footer__up_button dark:bg-nav-dark shadow" aria-label="Desplazarse hacia arriba">
+                    <svg width="28" height="17" viewBox="0 0 28 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 16L14 2L27 16" className="dark:stroke-light" stroke="#242E3D" strokeWidth="2" />
+                    </svg>
+                </button>
+            </div>
+
+            <div
+                class="container-x footer mb-0 smallLaptops:grid smallLaptops:grid-cols-3 smallLaptops:grid-flow-row smallLaptops:gap-10 smallLaptops:gap-20 mediumLaptops:grid mediumLaptops:grid-cols-3 mediumLaptops:grid-flow-row mediumLaptops:gap-10 mediumLaptops:gap-20 largeLaptops:grid largeLaptops:grid-cols-3 largeLaptops:grid-flow-row largeLaptops:gap-10 largeLaptops:gap-20 highResolution:grid highResolution:grid-cols-3 highResolution:grid-flow-row highResolution:gap-10 highResolution:gap-20">
+                <div class="footer__info flex flex-col gap-5">
+                    <a href="">
+                        <img src="assets/logo-dark.svg" loading="lazy" alt="Logo Amber" width="120px" />
+                    </a>
+                    <p>
+                        Somos una empresa que acelera la adopción de la nube mediante la implementación de tecnología
+                        sin
+                        servidor e inteligencia artificial de AWS.
+                    </p>
+                    <hr class="footer__divider_desktop" />
+                    <div class="col-2" style="align-items: center; gap: 1rem">
+                        <div class="col-2" style="gap: .5rem;">
+                            <a href="https://partners.amazonaws.com/partners/001E000001TptV3IAJ/Amber" target="_blank">
+                                <img src="assets/badgee_aws.svg" alt="Aws Partner Advanced Tier Services"
+                                    class="footer__info__badge" loading="lazy" />
+                            </a>
+                            <a href="https://partners.amazonaws.com/partners/001E000001TptV3IAJ/Amber" target="_blank">
+                                <img src="assets/badgee_aws_2.svg" alt="Aws Partner Govt. Services Competency"
+                                    class="footer__info__badge" loading="lazy" />
+                            </a>
+                        </div>
+
+                        <div style="gap: .75rem; display: flex;flex-direction: column;">
+                            <a href="mailto:hola@amber.pe"
+                                class="underline underline-offset-1 hover:text-black hover:text-shadow-dark text-black-400 dark:text-light-400 hover:dark:text-light hover:dark:text-shadow-light">hola@amber.pe</a>
+                            <div class="social">
+                                <a href="https://www.linkedin.com/company/amberperu" target="_blank"
+                                    aria-label="Nuestro espacio en Linkedin" class="social__button">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.93359 5.83301H0.459473V17.94H3.93359V5.83301Z" fill="#001024">
+                                        </path>
+                                        <path
+                                            d="M2.12346 0.117188C0.842421 0.117188 0 1.01934 0 2.21715C0 3.39222 0.814573 4.31711 2.07472 4.31711H2.10257C3.41146 4.31711 4.22603 3.38464 4.21907 2.21715C4.19122 1.01934 3.4045 0.117188 2.12346 0.117188Z"
+                                            fill="#001024"></path>
+                                        <path
+                                            d="M13.423 5.71973C11.4318 5.71973 10.1856 6.90238 9.95582 7.7363V5.83344H6.05005C6.09878 6.84173 6.05005 17.9404 6.05005 17.9404H9.95582V11.398C9.95582 11.0265 9.9419 10.6626 10.0394 10.4048C10.3039 9.67705 10.8818 8.91894 11.9191 8.91894C13.2768 8.91894 13.8894 10.0409 13.8894 11.6785V17.9404H17.83V11.2084C17.83 7.46338 15.8945 5.71973 13.423 5.71973Z"
+                                            fill="#001024"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://www.youtube.com/@amberperu" target="_blank"
+                                    aria-label="Nuestro espacio en Youtube" class="social__button">
+                                    <svg width="26" height="18" viewBox="0 0 26 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.3877 12.3211V5.17679C12.9239 6.37021 14.8882 7.52308 17.2114 8.76603C15.2953 9.82868 12.9239 11.021 10.3877 12.3211ZM24.5222 1.6236C24.0847 1.0472 23.339 0.598525 22.5452 0.449982C20.2118 0.00688645 5.65508 0.00562609 3.32301 0.449982C2.68641 0.56932 2.11955 0.857779 1.63259 1.30595C-0.419228 3.21035 0.223714 13.423 0.718281 15.0773C0.926252 15.7934 1.1951 16.3098 1.53369 16.6488C1.96992 17.097 2.5672 17.4056 3.25325 17.5439C5.17445 17.9413 15.0721 18.1635 22.5046 17.6036C23.1893 17.4843 23.7955 17.1658 24.2736 16.6985C26.1707 14.8017 26.0414 4.01553 24.5222 1.6236Z"
+                                            fill="#001024"></path>
+                                    </svg>
+                                </a>
+
+                                <a href="https://www.facebook.com/ambercloudpe" target="_blank"
+                                    aria-label="Nuestro espacio en Facebook" class="social__button">
+                                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.9541 2.224e-06C5.5293 2.224e-06 0.321289 5.17379 0.321289 11.5564C0.321289 17.3024 4.54773 22.0732 10.0802 22.9597V14.7316H7.16796V11.5403H10.0802V8.2684C10.0802 8.2684 10.2344 3.52173 16.7728 4.93203V7.63981C13.0493 7.09986 13.5036 9.90435 13.5036 9.90435V11.5403H16.5943L16.1887 14.7316H13.5036V23C19.1902 22.2425 23.5789 17.4072 23.5789 11.5484C23.5789 5.16573 18.3709 -0.00805664 11.946 -0.00805664L11.9541 2.224e-06Z"
+                                            fill="#001024"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://www.instagram.com/ambercloudpe/" target="_blank"
+                                    aria-label="Nuestro espacio en Instagram" class="social__button">
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.4788 2.73005C0.933838 3.79961 0.933838 5.19974 0.933838 8V10.3333C0.933838 13.1336 0.933838 14.5337 1.4788 15.6032C1.95817 16.5441 2.72307 17.309 3.66389 17.7883C4.73345 18.3333 6.13358 18.3333 8.93384 18.3333H11.2672C14.0674 18.3333 15.4676 18.3333 16.5371 17.7883C17.4779 17.309 18.2428 16.5441 18.7222 15.6032C19.2672 14.5337 19.2672 13.1336 19.2672 10.3333V8C19.2672 5.19974 19.2672 3.79961 18.7222 2.73005C18.2428 1.78923 17.4779 1.02433 16.5371 0.544967C15.4676 0 14.0674 0 11.2672 0H8.93384C6.13358 0 4.73345 0 3.66389 0.544967C2.72307 1.02433 1.95817 1.78923 1.4788 2.73005ZM11.2672 1.66667H8.93384C7.5062 1.66667 6.53571 1.66797 5.78557 1.72925C5.05487 1.78895 4.6812 1.89716 4.42054 2.02997C3.79333 2.34956 3.2834 2.85949 2.96381 3.4867C2.831 3.74737 2.72279 4.12103 2.66309 4.85173C2.6018 5.60187 2.6005 6.57237 2.6005 8V10.3333C2.6005 11.761 2.6018 12.7314 2.66309 13.4816C2.72279 14.2123 2.831 14.586 2.96381 14.8467C3.2834 15.4738 3.79333 15.9837 4.42054 16.3033C4.6812 16.4362 5.05487 16.5444 5.78557 16.6041C6.53571 16.6653 7.5062 16.6667 8.93384 16.6667H11.2672C12.6948 16.6667 13.6653 16.6653 14.4154 16.6041C15.1462 16.5444 15.5198 16.4362 15.7805 16.3033C16.4077 15.9837 16.9176 15.4738 17.2372 14.8467C17.37 14.586 17.4783 14.2123 17.5379 13.4816C17.5992 12.7314 17.6005 11.761 17.6005 10.3333V8C17.6005 6.57237 17.5992 5.60187 17.5379 4.85173C17.4783 4.12103 17.37 3.74737 17.2372 3.4867C16.9176 2.85949 16.4077 2.34956 15.7805 2.02997C15.5198 1.89716 15.1462 1.78895 14.4154 1.72925C13.6653 1.66797 12.6948 1.66667 11.2672 1.66667Z"
+                                            fill="#001024"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.1005 14.1667C12.8619 14.1667 15.1005 11.9282 15.1005 9.16675C15.1005 6.40532 12.8619 4.16675 10.1005 4.16675C7.3391 4.16675 5.10052 6.40532 5.10052 9.16675C5.10052 11.9282 7.3391 14.1667 10.1005 14.1667ZM10.1005 12.5001C11.9414 12.5001 13.4339 11.0077 13.4339 9.16675C13.4339 7.3258 11.9414 5.83341 10.1005 5.83341C8.25957 5.83341 6.76719 7.3258 6.76719 9.16675C6.76719 11.0077 8.25957 12.5001 10.1005 12.5001Z"
+                                            fill="#001024"></path>
+                                        <path
+                                            d="M15.1005 3.3335C14.6403 3.3335 14.2672 3.7066 14.2672 4.16683C14.2672 4.62706 14.6403 5.00016 15.1005 5.00016C15.5608 5.00016 15.9339 4.62706 15.9339 4.16683C15.9339 3.7066 15.5608 3.3335 15.1005 3.3335Z"
+                                            fill="#001024"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://www.tiktok.com/@amberaws" target="_blank"
+                                    aria-label="Nuestro espacio en TikTok" class="social__button">
+                                    <svg width="15" height="17" viewBox="0 0 15 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.5519 6.88806V4.09519C13.244 4.09519 12.2458 3.74608 11.6017 3.06753C10.9406 2.29312 10.5702 1.31242 10.5544 0.294328V0.09273L7.91392 0.0288086V11.3724C7.82334 11.8673 7.58309 12.3225 7.2256 12.6766C6.86812 13.0307 6.4106 13.2665 5.91482 13.3523C5.41904 13.4381 4.90888 13.3697 4.45319 13.1564C3.99751 12.9431 3.61825 12.5951 3.36661 12.1594C3.11498 11.7237 3.00308 11.2212 3.04603 10.7199C3.08898 10.2186 3.28472 9.74256 3.6068 9.35601C3.92889 8.96947 4.36182 8.69105 4.84715 8.55835C5.33248 8.42564 5.84685 8.44505 6.3208 8.61393V5.90957C6.04446 5.86429 5.76493 5.84127 5.48491 5.84073C4.4774 5.84073 3.49252 6.13949 2.65481 6.69923C1.8171 7.25897 1.16419 8.05455 0.778632 8.98537C0.393076 9.91618 0.292197 10.9404 0.488752 11.9286C0.685307 12.9167 1.17047 13.8244 1.88288 14.5368C2.59529 15.2492 3.50296 15.7344 4.49111 15.9309C5.47926 16.1275 6.5035 16.0266 7.43431 15.641C8.36513 15.2555 9.16071 14.6026 9.72045 13.7649C10.2802 12.9272 10.5789 11.9423 10.5789 10.9348C10.5784 10.726 10.5653 10.5175 10.5396 10.3103V5.81123C11.7403 6.56105 13.1372 6.93595 14.5519 6.88806Z"
+                                            fill="#001024"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="footer__menu grid grid-cols-1 gap-5 mt-5 smallLaptops:col-span-2 smallLaptops:grid-cols-2 mediumLaptops:col-span-2 mediumLaptops:grid-cols-2 largeLaptops:col-span-2 largeLaptops:grid-cols-2 highResolution:col-span-2 highResolution:grid-cols-2">
+                    <div>
+                        <h5 class="footer__menu__title">Soluciones</h5>
+                        <ul>
+                            <li>
+                                <a class="hover:text-black hover:text-shadow-dark text-black-400 dark:text-light-400 hover:dark:text-light hover:dark:text-shadow-light"
+                                    href="https://amber.pe/soluciones/migracion-a-la-nube">Migración a la nube</a>
+                            </li>
+                            <li>
+                                <a class="hover:text-black hover:text-shadow-dark text-black-400 dark:text-light-400 hover:dark:text-light hover:dark:text-shadow-light"
+                                    href="https://amber.pe/soluciones/modernizacion-de-aplicaciones">Modernización de
+                                    aplicaciones</a>
+                            </li>
+                            <li>
+                                <a class="hover:text-black hover:text-shadow-dark text-black-400 dark:text-light-400 hover:dark:text-light hover:dark:text-shadow-light"
+                                    href="https://amber.pe/soluciones/inteligencia-artificial-generativa">Inteligencia
+                                    Artificial</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="footer__menu__title">Especializaciones</h5>
+                        <ul>
+                            <li>
+                                <a class="hover:text-black hover:text-shadow-dark text-black-400 dark:text-light-400 hover:dark:text-light hover:dark:text-shadow-light"
+                                    href="https://amber.pe/especializacion/amazon-rds">Entrega de Amazon RDS</a>
+                            </li>
+                            <li>
+                                <a class="hover:text-black hover:text-shadow-dark text-black-400 dark:text-light-400 hover:dark:text-light hover:dark:text-shadow-light"
+                                    href="https://amber.pe/especializacion/amazon-cloud-formation">Entrega de AWS
+                                    CloudFormation</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="footer__menu__title">Compañía</h5>
+                        <ul>
+                            <li>
+                                <a class="hover:text-black hover:text-shadow-dark text-black-400 dark:text-light-400 hover:dark:text-light hover:dark:text-shadow-light"
+                                    href="https://amber.pe/nosotros">Sobre nosotros</a>
+                            </li>
+                            <li>
+                                <a class="hover:text-black hover:text-shadow-dark text-black-400 dark:text-light-400 hover:dark:text-light hover:dark:text-shadow-light"
+                                    href="https://amber.pe/casos-de-exito">Casos de éxito</a>
+                            </li>
+                            <li>
+                                <a class="hover:text-black hover:text-shadow-dark text-black-400 dark:text-light-400 hover:dark:text-light hover:dark:text-shadow-light"
+                                    href="https://amber.pe/contacto">Contáctenos</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="h-full">
+                            <h5 class="footer__menu__title">Legal</h5>
+                            <ul>
+                                <li>
+                                    <a class="hover:text-black hover:text-shadow-dark text-black-400 dark:text-light-400 hover:dark:text-light hover:dark:text-shadow-light"
+                                        href="https://amber.pe/politicas-de-privacidad">Política de privacidad</a>
+                                </li>
+                                <li>
+                                    <a class="hover:text-black hover:text-shadow-dark text-black-400 dark:text-light-400 hover:dark:text-light hover:dark:text-shadow-light"
+                                        href="https://amber.pe/terminos-de-uso">Términos de uso</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div
+                    class="footer__copyright col-span-3 smallLaptops:text-center mediumLaptops:text-center largeLaptops:text-center highResolution:text-center">
+                    © 2025 Amber · Todos los derechos reservados.
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script>
+        AOS.init();
+        const button = document.querySelector('.footer__up_button');
+        button.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+
+</html>
