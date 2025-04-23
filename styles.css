@@ -99,7 +99,7 @@ section:not(:last-child) {
 
 .hero__title {
   color: white;
-  font-size: 5rem;
+  font-size: 60px;
   font-weight: 600;
   max-width: 60%;
 }
@@ -124,7 +124,6 @@ section:not(:last-child) {
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-size: 22px;
   padding-bottom: 2rem;
 }
 
@@ -178,6 +177,10 @@ section:not(:last-child) {
 
 .roadmap__item:not(:last-child) {
   border-bottom: 0.1px solid var(--black-400);
+}
+
+.roadmap__title{
+  text-align: end;
 }
 
 footer {
@@ -283,12 +286,8 @@ footer {
   }
 
   .hero__title {
-    font-size: 2.5rem !important;
+    font-size: 30px !important;
     max-width: 80% !important;
-  }
-
-  .event__info > li {
-    font-size: 1.5rem;
   }
 
   .col-2 {
@@ -296,7 +295,7 @@ footer {
   }
 
   .title__xl {
-    font-size: 2rem;
+    font-size: 20px
   }
 
   .card__avatar {
@@ -335,20 +334,35 @@ footer {
   .footer__divider_desktop{
     display: none;
   }
+
+  .roadmap{
+    order: 1;
+  }
+
+  .roadmap__title{
+    text-align: start;
+  }
 }
 
-@media only screen and (max-width: 1200px) {
-  body {
-    font-size: 16px;
-  }
+@media only screen and (max-width: 1200px) and (min-width: 600px) {
 
   .container-x {
     width: 90%;
   }
 
+  .hero{
+    background: url("assets/portada-mobile.webp") no-repeat center center/cover;
+    background-size: cover;
+    height: 16rem;
+  }
+
   .hero__title {
-    font-size: 3rem;
-    max-width: 100%;
+    font-size: 40px;
+    max-width: 80%;
+  }
+
+  section{
+    margin-bottom: 3rem !important;
   }
 
   .col-2 {
@@ -356,6 +370,10 @@ footer {
   }
 
   .title__xl {
-    font-size: 2rem;
+    font-size: 22px;
+  }
+
+  .roadmap__title{
+    text-align: start;
   }
 }
