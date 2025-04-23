@@ -22,13 +22,7 @@
   --nav-dark: #141414;
   --font-title: "DM Serif Display, serif";
   --font-body: "Montserrat Variable";
-  --shadow-blue: 0px 0px 60px 0px rgba(50, 188, 253, 1),
-    -8px 4px 20px 0px rgba(157, 216, 255, 0.5) inset,
-    8px -8px 20px 0px rgba(6, 80, 160, 0.25) inset;
-  --shadow-orange: 0px 0px 50px 20px rgba(255, 142, 82, 0.8);
-  --shadow-green: 0px 0px 60px 0px rgba(50, 253, 107, 1),
-    -8px 4px 20px 0px rgba(157, 255, 175, 0.5) inset,
-    8px -8px 20px 0px rgba(6, 160, 44, 0.25) inset;
+  --shadow: 0px 0px 20px 0px rgba(151, 151, 151, 0.514);
   --shadow-violet: 0px 0px 20px 0px rgb(108, 102, 255, 1);
 }
 
@@ -118,6 +112,12 @@ section:not(:last-child) {
 
 .event__info {
   list-style: none;
+}
+
+.iframe__container{
+  box-shadow: var(--shadow);
+  border-radius: 8px;
+
 }
 
 .event__info > li {
@@ -272,9 +272,23 @@ footer {
     max-width: 90% !important;
   }
 
+  .hero{
+    background: url("assets/portada-mobile.webp") no-repeat center center/cover;
+    background-size: cover;
+    height: 16rem;
+  }
+
+  section{
+    margin-bottom: 3rem !important;
+  }
+
   .hero__title {
-    font-size: 3rem;
-    max-width: 100%;
+    font-size: 2.5rem !important;
+    max-width: 80% !important;
+  }
+
+  .event__info > li {
+    font-size: 1.5rem;
   }
 
   .col-2 {
